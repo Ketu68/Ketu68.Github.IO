@@ -1,4 +1,5 @@
-﻿@import url(https://fonts.googleapis.com/css?family=Lobster:300,500);
+﻿
+@import url(https://fonts.googleapis.com/css?family=Lobster:300,500);
 @import url(https://fonts.googleapis.com/css?family=Rokkitt:400,700);
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300);
 
@@ -57,9 +58,9 @@ h3 {
 }
 
 h4 {
-	padding-top: 25px;
+	padding-top: 525px;
 	line-height: 40px;
-	padding-bottom: 0px;
+	padding-bottom: 400px;
 	font-size: 22px;
 	font-weight: 900;
 }
@@ -69,6 +70,7 @@ p {
 	font-weight: 300;
     line-height: 30px;
     padding-bottom: 15px;
+	color: yellow;
 }
 
 .text-center {
@@ -84,28 +86,61 @@ section {
     margin-top: 50px;
 }
 
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+/*=======================================
+  MENU SECTION ANIMATION
+  =======================================*/
+
+.menu {
+	color: #fff;
+	font: bold 24px Rokkitt;
+	text-align: center;
+	display: inline;
+	margin: 0% auto;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+.menu li {
+	color: #fff;
+	display: inline;
+	text-shadow: 3px 2px black;
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+	position: relative;
+	padding: 23px 1%;
+	cursor: pointer;
+	transition-property: background;
+	transition-duration: .4s;
+	transition-delay: 4s;
+	transition-timing-function: ease-in-out;
+}
+
+.menu li:hover {
+	color: #ffff00;
+}
+
+.menu-container {
+	max-height: 340px;
+	margin: 0% auto;
+	content: " ";
+	width: 100%;
+	position: fixed;
+	z-index: 100;          
+}
+
+
 .navbar {
 	height: 105px;
 	max-height: 340px;
 	display: block;
-}
-
-.container {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.container-fluid {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-.row {
-  margin-right: -15px;
-  margin-left: -15px;
 }
 
 .clearfix:after,
@@ -126,15 +161,6 @@ section {
 	text-align: right; 
 } 
 
-.menu-container {
-	max-height: 340px;
-	margin: 0% auto;
-	content: " ";
-	width: 100%;
-	position: fixed;
-	z-index: 100;      
-}
-
 .flex-container {
     display: -webkit-flex;
     display: flex;
@@ -146,12 +172,12 @@ section {
 	box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.5);
 }
 
-.container-fluid {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
+.container-fluid {  
+  padding-right: 15px;  
+  padding-left: 15px;  
+  margin-right: auto;  
+  margin-left: auto;  
+}  
 
 .container {
   padding-right: 15px; 
@@ -166,30 +192,34 @@ section {
   SECTION STYLES
   =======================================*/
 #home {
-	background: url(../img/harley1.png) no-repeat; 
-	-webkit-background-size: contain;
-	-moz-background-size: contain;  
-	-o-background-size: contain;  
-	background-size: contain; 
+	background: url(../img/mybike4.jpg) no-repeat; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 	display: auto;
-	height: auto;
-	width: auto;
-	padding-bottom: 438px;   
+	height: 1991;
+	/* width: 3253; */
+	width: 100%;
+	height: 100%;
+	padding-bottom: 474px;
 	color: #000;
+	background-color: #000;
 } 
 #skills {
-	background: url(../img/alienware1.jpg) no-repeat; 
+	background: url(../img/alienware3.jpg) no-repeat; 
 	z-index: 1;
-	background-color: #fff;
+	background-color: #000;
 	-webkit-background-size: 100%;
 	-moz-background-size: 100%;
 	-o-background-size: 100%;
-	background-size: 100%;
+	background-size: 114%;
 	display: auto;
-	height: auto;
-	width: auto;
+	height: 902;
+	width: 1651;
 	padding-top: 0px; 
-	padding-bottom: 977px;   
+	/* padding-bottom: 777px;    */
+	padding-bottom: 100px;
 }
 #portfolio {
 	background-color: #585858;
@@ -211,7 +241,7 @@ section {
 	height: auto;
 	width: auto;
 	padding-top: 0px; 
-	padding-bottom: 977px;      
+	padding-bottom: 200px;      
 }
 #contact {
 	background: url(../img/globe.png) no-repeat; 
@@ -222,7 +252,7 @@ section {
 	-o-background-size: 100%;
 	background-size: 100%;
 	padding-top: 0px; 
-	padding-bottom: 798px;
+	padding-bottom: 20px;
 }
 
 .head-name {
@@ -260,7 +290,7 @@ section {
 	color: #fffffa;
 	letter-spacing: 2pt;
 	word-spacing: 10pt;
-	font-size: 4.5em;
+	font-size: 6em;
 	text-align: left;
 	font-family: "Permanent Marker";
 	line-height: 1;
@@ -274,7 +304,7 @@ section {
 	color: #fffffa;
 	letter-spacing: 2pt;
 	word-spacing: 10pt;
-	font-size: 4.5em;
+	font-size: 6em;
 	text-align: left;
 	font-family: "Permanent Marker";
 	line-height: 1;
@@ -287,7 +317,7 @@ section {
 	color: #fffffa;
 	letter-spacing: 1pt;
 	word-spacing: 10pt;
-	font-size: 4.5em;
+	font-size: 6em;
 	text-align: left;
 	font-family: "Rokkitt";
 	line-height: 1;
@@ -307,8 +337,8 @@ section {
 	font-style: italic;
 	line-height: 1;
     font-weight: 900;
-    padding-left: 50px;
-	padding-top: 120px;
+    padding-left: 0px;
+	padding-top: 130px;
 }
 .quote2 {
 	text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.9);
@@ -326,84 +356,74 @@ section {
 	padding-bottom: 80px;
 }
 
-.icontext1 { 
-  font-size: 20px;
-  position: relative;
-  left: 340px;
-  top: 144px;
-  text-align: left;
-} 
-.icontext2 { 
-  font-size: 20px;
-  position: relative;
-  left: 292px;
-  top: 261px;
+.icontext1 {  
+  font-size: 20px; 
+  position: absolute; 
+  left: -118px;  
+  top: 140px; 
   text-align: left;
 }
-.icontext3 { 
-  font-size: 20px;
-  position: relative;
-  left: 242px;
-  top: 381px;
+.icontext2 {  
+  font-size: 20px; 
+  position: absolute; 
+  left: -126px;  
+  top: 276px;  
+  text-align: left; 
+}
+.icontext3 {  
+  font-size: 20px; 
+  position: absolute; 
+  left: -126px;
+  top: 430px;
   text-align: left;
 }
-.icontext4 { 
-  font-size: 20px;
-  position: relative;
-  left: 1366px;
-  top: 200px;
-  text-align: left;
-} 
+.icontext4 {  
+  font-size: 20px; 
+  position: absolute; 
+  left: 734px; 
+  top: -200px; 
+  text-align: right; 
+}
 .icontext5 { 
-  font-size: 20px;
-  position: relative;
-  left: 1386px;
-  top: 319px;
-  text-align: left;
+  font-size: 20px; 
+  position: absolute; 
+  left: 814px; 
+  top: -60px; 
+  text-align: right; 
 }
-.icontext6 { 
-  font-size: 20px;
-  position: relative;
-  left: 1322px;
-  top: 439px;
-  text-align: left;
+.icontext6 {  
+  font-size: 20px; 
+  position: absolute; 
+  left: 814px; 
+  top: 98px; 
+  text-align: right; 
+} 
+.icontext7 {  
+  font-size: 20px; 
+  position: absolute; 
+  left: 367px; 
+  top: 3792px; 
+  text-align: left; 
 }
-.icontext7 { 
-  font-size: 20px;
-  position: absolute;
-  left: 366px;
-  top: 4476px;
-  text-align: left;
-}
-.icontext8 { 
-  font-size: 20px;
-  position: absolute;
-  left: 840px;
-  top: 4472px;
-  text-align: left;
-}
-.icontext9 { 
-  font-size: 20px;
-  position: absolute;
-  left: 1342px;
-  top: 4476px;
-  text-align: left;
+.icontext8 {  
+  font-size: 20px; 
+  position: absolute; 
+  left: 840px; 
+  top: 3792px; 
+  text-align: left; 
+} 
+.icontext9 {  
+  font-size: 20px; 
+  position: absolute; 
+  left: 1338px; 
+  top: 3792px; 
+  text-align: left; 
 }
 
-.line1 {
-	position: absolute;
-	left: 320px;
-	top: 1324px;
-	background-image: url(../img/line1.jpg);
-	z-index: 2;
-	background-repeat: no-repeat;
-	width: 347px;
-	height: 10px;
-}
 .hcjicon {
-	position: absolute;
-	left: 172px;
-	top: 1262px;
+	position: relative;
+	left: -270px;
+	top: 100px;
 	background-image: url(../img/html_css.png);
 	z-index: 2;
 	background-repeat: no-repeat;
@@ -413,31 +433,42 @@ section {
 #exptexthcj {
 	position: relative;
     display: none;
-    font-size: 21px;
+    font-size: 20px;
 	color: blue;
 }
 #icons:hover #exptexthcj {
-	display: inline;
+	display: block;
 }
-
 .hcjicon:hover {
 	opacity: .30;
 }
-
-.line2 {
-	position: absolute;
-	left: 270px;
-	top: 1440px;
-	background-image: url(../img/line1.jpg);
+.giticon {
+	position: relative;
+	left: 1092px;
+	top: -228px;
+	background-image: url(../img/git_logo.png);
 	z-index: 2;
 	background-repeat: no-repeat;
-	width: 347px;
-	height: 10px;
+	width: 121px;
+	height: 110px;
 }
+#exptextgit {
+	position: relative;
+    display: none;
+    font-size: 20px;
+	color: blue;
+}
+#icons:hover #exptextgit {
+	display: inline;
+}
+.giticon:hover {
+	opacity: .50; 
+} 
+
 .sqlicon {
-	position: absolute;
-	left: 120px;
-	top: 1388px;
+	position: relative;
+	left: -267px;
+	top: 130px;
 	background-image: url(../img/sql_logo.png);
 	z-index: 2;
 	background-repeat: no-repeat;
@@ -451,27 +482,41 @@ section {
 	color: green;
 }
 #icons:hover #exptextsql {
-	display: inline;
+	display: block;
 }
 
 .sqlicon:hover {
 	opacity: .30;
 }
 
-.line3 {
-	position: absolute;
-	left: 220px;
-	top: 1560px;
-	background-image: url(../img/line1.jpg);
+.msnicon {
+	position: relative;
+	left: 1065px;
+	top: -210px;
+	background-image: url(../img/msn.png);
 	z-index: 2;
 	background-repeat: no-repeat;
-	width: 347px;
-	height: 10px;
+	width: 136px;
+	height: 134px;
 }
+#exptextmsn {
+	position: relative;
+    display: none;
+    font-size: 21px;
+	color: green;
+}
+#icons:hover #exptextmsn {
+	display: inline;
+}
+
+.msnicon:hover {
+	opacity: .30;
+}
+
 .pythonicon {
-	position: absolute;
-	left: 70px;
-	top: 1510px;
+	position: relative;
+	left: -270px;
+	top: 172px;
 	background-image: url(../img/python_logo.png);
 	z-index: 2;
 	background-repeat: no-repeat;
@@ -490,86 +535,11 @@ section {
 .pythonicon:hover {
 	opacity: .30;
 }
-.line4 {
-	position: absolute;
-	left: 1330px;
-	top: 1380px;
-	background-image: url(../img/line1.jpg);
-	z-index: 2;
-	background-repeat: no-repeat;
-	width: 347px;
-	height: 10px;
-}
-.giticon {
-	position: absolute;
-	left: 1726px;
-	top: 1328px;
-	background-image: url(../img/git_logo.png);
-	z-index: 2;
-	background-repeat: no-repeat;
-	width: 121px;
-	height: 110px;
-}
-#exptextgit {
-	position: relative;
-    display: none;
-    font-size: 21px;
-	color: blue;
-}
-#icons:hover #exptextgit {
-	display: inline;
-}
 
-.giticon:hover {
-	opacity: .30;
-}
-.line5 {
-	position: absolute;
-	left: 1300px;
-	top: 1500px;
-	background-image: url(../img/line1.jpg);
-	z-index: 2;
-	background-repeat: no-repeat;
-	width: 347px;
-	height: 10px;
-}
-.msnicon {
-	position: absolute;
-	left: 1680px;
-	top: 1442px;
-	background-image: url(../img/msnet_logo.png);
-	z-index: 2;
-	background-repeat: no-repeat;
-	width: 121px;
-	height: 110px;
-}
-#exptextmsn {
-	position: relative;
-    display: none;
-    font-size: 21px;
-	color: green;
-}
-#icons:hover #exptextmsn {
-	display: inline;
-}
-
-.msnicon:hover {
-	opacity: .30;
-}
-.line6 {
-	position: absolute;
-	left: 1270px;
-	top: 1620px;
-	background-image: url(../img/line1.jpg);
-	z-index: 2;
-	background-repeat: no-repeat;
-	width: 347px;
-	height: 10px;
-}
 .agileicon {
-	position: absolute;
-	left: 1620px;
-	top: 1570px;
+	position: relative;
+	left: 1060px;
+	top: -177px;
 	background-image: url(../img/agile_logo.png);
 	z-index: 2;
 	background-repeat: no-repeat;
@@ -591,9 +561,9 @@ section {
 }
 
 .navyicon {
-	position: absolute;
+	position: relative;
 	left: 198px;
-	top: 3341px;
+	top: 230px;
 	background-image: url(../img/navy_logo.png);
 	z-index: 2;
 	background-repeat: no-repeat;
@@ -601,9 +571,9 @@ section {
 	height: 241px;
 }
 .cloudicon {
-	position: absolute;
+	position: relative;
 	left: 733px;
-	top: 3304px;
+	top: -41px;
 	background-image: url(../img/cloud.png);
 	z-index: 2;
 	background-repeat: no-repeat;
@@ -611,29 +581,19 @@ section {
 	height: 304px;
 }
 .techicon {
-	position: absolute;
+	position: relative;
 	left: 1379px;
-	top: 3388px;
+	top: -260px;
 	background-image: url(../img/tech_logo.png);
 	z-index: 2;
 	background-repeat: no-repeat;
 	width: 294px;
 	height: 183px;
 }
-.vroomvroomicon {
-	position: relative;
-	left: 1004px;
-	top: -286px;
-	background-image: url(../img/vroomvroom.png);
-	z-index: 2;
-	background-repeat: no-repeat;
-	width: 283px;
-	height: 182px;
-}
 .phoneicon {
-	position: absolute;
-	left: 288px;
-	top: 4230px;
+	position: relative;
+	left: 318px;
+	top: 102px;
 	background-image: url(../img/phone.png);
 	z-index: 2;
 	background-repeat: no-repeat;
@@ -643,6 +603,8 @@ section {
 #contextphone {
 	position: relative;
     display: none;
+	left: 30px;
+	top: 422px;
     font-size: 21px;
 	color: yellow;
 }
@@ -654,9 +616,9 @@ section {
 }
 
 .emailicon {
-	position: absolute;
-	left: 794px;
-	top: 4238px;
+	position: relative;
+	left: 806px;
+	top: -118px;
 	background-image: url(../img/email.png);
 	z-index: 2;
 	background-repeat: no-repeat;
@@ -666,6 +628,8 @@ section {
 #contextemail {
 	position: relative;
     display: none;
+	left: 8px;
+	top: 420px;
     font-size: 21px;
 	color: yellow;
 }
@@ -677,9 +641,9 @@ section {
 }
 
 .resumeicon {
-	position: absolute;
+	position: relative;
 	left: 1332px;
-	top: 4204px;
+	top: -420px;
 	background-image: url(../img/resume.png);
 	z-index: 2;
 	background-repeat: no-repeat;
@@ -689,6 +653,8 @@ section {
 #contextresume {
 	position: relative;
     display: none;
+	left: 8px;
+	top: 418px;
     font-size: 21px;
 	color: yellow;
 }
@@ -724,8 +690,8 @@ section {
 #contactlink { 
 	position: relative; 
     font-size: 24px; 
-	left: 72px; 
-	top: 660px; 
+	left: 743px; 
+	top: -88px; 
 	color: yellow; 
 	text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
 }

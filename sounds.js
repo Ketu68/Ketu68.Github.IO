@@ -7,7 +7,7 @@ function playclip() {
 	if (navigator.appName == "Microsoft Internet Explorer" && (navigator.appVersion.indexOf("MSIE 7")!=-1) || (navigator.appVersion.indexOf("MSIE 8")!=-1)) {
 		if (document.all)
 		{
-			document.all.sound.src = "./Audio/harley.mp3";
+			document.all.sound.src = "./audio/harley.mp3";
 		}
 	}
 
@@ -21,7 +21,7 @@ function playclip2() {
 	if (navigator.appName == "Microsoft Internet Explorer" && (navigator.appVersion.indexOf("MSIE 7")!=-1) || (navigator.appVersion.indexOf("MSIE 8")!=-1)) {
 		if (document.all)
 		{
-			document.all.sound.src = "./Audio/applause.mp3";
+			document.all.sound.src = "./audio/applause.mp3";
 		}
 	}
 	
@@ -35,7 +35,7 @@ function playclip3() {
 	if (navigator.appName == "Microsoft Internet Explorer" && (navigator.appVersion.indexOf("MSIE 7")!=-1) || (navigator.appVersion.indexOf("MSIE 8")!=-1)) {
 		if (document.all)
 		{
-			document.all.sound.src = "./Audio/thunder.mp3";
+			document.all.sound.src = "./audio/thunder.mp3";
 		}
 	}
 	
@@ -49,7 +49,7 @@ function playclip4() {
 	if (navigator.appName == "Microsoft Internet Explorer" && (navigator.appVersion.indexOf("MSIE 7")!=-1) || (navigator.appVersion.indexOf("MSIE 8")!=-1)) {
 		if (document.all)
 		{
-			document.all.sound.src = "./Audio/laser.mp3";
+			document.all.sound.src = "./audio/laser.mp3";
 		}
 	}
 	
@@ -63,7 +63,7 @@ function playclip5() {
 	if (navigator.appName == "Microsoft Internet Explorer" && (navigator.appVersion.indexOf("MSIE 7")!=-1) || (navigator.appVersion.indexOf("MSIE 8")!=-1)) {
 		if (document.all)
 		{
-			document.all.sound.src = "./Audio/vroomvroom.mp3";
+			document.all.sound.src = "./audio/vroomvroom.mp3";
 		}
 	}
 	

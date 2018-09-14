@@ -1,41 +1,4 @@
 /*=======================================
-  MENU SECTION ANIMATION
-  =======================================*/
-
-.menu {
-	color: #fff;
-	font: bold 24px Rokkitt;
-	text-align: center;
-	display: inline;
-	margin: 0% auto;
-	padding: 0;
-	list-style: none;
-	text-decoration: none;
-}
-
-.menu li {
-	color: #fff;
-	display: inline;
-	text-shadow: 3px 2px black;
-	list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    float: right;
-	position: relative;
-	padding: 23px 1%;
-	cursor: pointer;
-	transition-property: background;
-	transition-duration: .4s;
-	transition-delay: 4s;
-	transition-timing-function: ease-in-out;
-}
-
-.menu li:hover {
-	color: #ffff00;
-}
-
-/*=======================================
   GALLERY SECTION ANIMATION
   =======================================*/
 .photo {
