@@ -1,15 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
 <script type="text/javascript" src="sounds.js"></script>
 
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <title>Phillip Beaver - Portfolio</title>
 
-<meta name="viewport" content="width=device-width"/>
 <meta name="description" content="Phillip Beaver Portfolio."/>
 
 <link rel="stylesheet" href="./css/shared.css">
@@ -18,113 +17,433 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Permanent Marker">
 <link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
-
-<body>
 
 <!--HOME -->
 
-<div class="instaFade">
-	<div id="home">
-		<div class="head-name">Phillip Beaver</div>
-		<div class="head-title">Software Developer</div>
+<body>
+<audio autoplay volume="0.6">
+	<source src="vroomvroom.mp3" type="audio/mp3">
+	<source src="vroomvroom.ogg" type="audio/ogg">
+</audio>
+<iframe src="vroomvroom.mp3" allow="autoplay" style="display:none" id="iframeAudio">
+</iframe>
 
-		<div class="quickFade head-main">Live to ride...</div>
-		<div class="slowFade head-main2">Ride to.....</div>
-		<div class="slowerFade head-main3">&lt;/code></div>
-	</div>
+<div id="preloadedImages"></div>
+
+<div id="home" class="instaFade">
+	<div class="quickFade head-main">Live to ride...</div> 
+	<div class="slowFade head-main2">Ride to.....</div> 
+	<div class="slowerFade head-main3">&lt;/code></div> 
 </div>
 
 <!--END HOME -->
 
 <!-- NAV -->
+<style>
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	#home {
+		background: url(./img/smallestbike.jpg) no-repeat;
+		background-size: 100%; 
+		display: auto; 
+		height: auto; 
+		width: auto; 
+		padding-bottom: 800px; 
+	}
+	#skills { 
+		background: url(./img/blackbg.jpg) no-repeat;  
+		background-size: 100%; 
+		<!-- padding-top: 0px;  -->
+		padding-bottom: 20px;
+		background-color: #000; 
+	} 
+	#contact { 
+		background: url(./img/xsmglobe.png) no-repeat;  
+		background-color: #585858; 
+		background-size: auto;
+		display: auto;
+		height: auto;
+		width: auto;
+		padding-top: 0px;  
+		padding-bottom: 0px;
+	} 
+	.phoneicon {
+		position: relative;
+		left: 0px;
+		top: 0px;
+		background-image: url(./img/xsmphone.png);
+		z-index: 2;
+		background-repeat: no-repeat;
+		width: 75px;
+		height: 58px;
+	}
+	.emailicon {
+		position: relative;
+		left: 0px;
+		top: 0px;
+		background-image: url(./img/xsmemail.png);
+		z-index: 2;
+		background-repeat: no-repeat;
+		width: 75px;
+		height: 58px;
+	}
+	.resumeicon {
+		position: relative;
+		left: 0px;
+		top: 0px;
+		background-image: url(./img/xsmresume.png);
+		z-index: 2;
+		background-repeat: no-repeat;
+		width: 75px;
+		height: 58px;
+	}
+	.menuright { 
+		font: bold 18px Rokkitt; 
+		padding: 0; 
+	} 
+	.menuleft li a { 
+		padding: 6px 9px; 
+	} 
+	.head-main {
+		text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.9); 
+		letter-spacing: 2px; 
+		word-spacing: 2px; 
+		font-size: 42px; 
+		padding-left: 44px; 
+		padding-top: 142px; 
+	} 
+	.head-main2 { -->
+		text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.9); 
+		letter-spacing: 2px; 
+		word-spacing: 2px; 
+		font-size: 42px; 
+		padding-left: 88px; 
+		padding-top: 10px; 
+	} 
+	.head-main3 { -->
+		text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.9); 
+		letter-spacing: 2px; 
+		word-spacing: 2px; 
+		font-size: 42px; 
+		padding-left: 124px; 
+		padding-top: 12px; 
+	} 
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+	#home {
+		background: url(./img/smallbike.jpg) no-repeat;	
+		background-size: 100%; 
+		display: auto; 
+		height: auto; 
+		width: auto; 
+		padding-bottom: 800px; 
+	}
+	#contact { 
+		background: url(./img/smglobe.png) no-repeat;  
+		background-color: #585858; 
+		background-size: auto;
+		display: auto;
+		height: auto;
+		width: auto;
+		padding-top: 0px;  
+		padding-bottom: 0px;
+	} 
+	.phoneicon {
+		position: relative;
+		left: 0px;
+		top: 0px;
+		background-image: url(./img/smphone.png);
+		z-index: 2;
+		background-repeat: no-repeat;
+		width: 150px;
+		height: 115px;
+	}
+	.emailicon {
+		position: relative;
+		left: 0px;
+		top: 0px;
+		background-image: url(./img/smemail.png);
+		z-index: 2;
+		background-repeat: no-repeat;
+		width: 150px;
+		height: 115px;
+	}
+	.resumeicon {
+		position: relative;
+		left: 0px;
+		top: 0px;
+		background-image: url(./img/smresume.png);
+		z-index: 2;
+		background-repeat: no-repeat;
+		width: 150px;
+		height: 115px;
+	}
+	.menuright { 
+		font: bold 18px Rokkitt; 
+		padding: 0; 
+	} 
+	.menuleft li a { 
+		padding: 6px 9px; 
+	} 
+	.head-main {
+		text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.9); 
+		letter-spacing: 2px; 
+		word-spacing: 2px; 
+		font-size: 48px; 
+		padding-left: 44px; 
+		padding-top: 142px;
+	} 
+	.head-main2 { -->
+		text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.9); 
+		letter-spacing: 2px; 
+		word-spacing: 2px; 
+		font-size: 48px; 
+		padding-left: 88px; 
+		padding-top: 10px; 
+	} 
+	.head-main3 { -->
+		text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.9); 
+		letter-spacing: 2px; 
+		word-spacing: 2px; 
+		font-size: 48px; 
+		padding-left: 124px; 
+		padding-top: 12px; 
+	} 
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	#home {
+		background: url(./img/medbike.jpg) no-repeat; 
+		background-size: 100%; 
+		display: auto; 
+		height: auto; 
+		width: auto; 
+		padding-bottom: 800px; 
+	}
+	.menuright { 
+		font: bold 21px Rokkitt; 
+		padding: 3px 0px; 
+	} 
+	.menuleft li a { 
+		padding: 6px 9px; 
+	} 
+	.head-main {
+		text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.9); 
+		letter-spacing: 2px; 
+		word-spacing: 2px; 
+		font-size: 54px; 
+		padding-left: 44px; 
+		padding-top: 142px;
+	} 
+	.head-main2 { -->
+		text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.9); 
+		letter-spacing: 2px; 
+		word-spacing: 2px; 
+		font-size: 54px; 
+		padding-left: 88px; 
+		padding-top: 12px; 
+	} 
+	.head-main3 { -->
+		text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.9); 
+		letter-spacing: 2px; 
+		word-spacing: 2px; 
+		font-size: 54px; 
+		padding-left: 124px; 
+		padding-top: 14px; 
+	} 
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	#home {
+		background: url(./img/lgbike.png) no-repeat; 
+		background-size: 100%; 
+		display: auto; 
+		height: auto; 
+		width: auto; 
+		padding-bottom: 800px; 
+	}
+	.head-main {
+		text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.9); 
+		letter-spacing: 4px; 
+		word-spacing: 4px; 
+		font-size: 64px; 
+		padding-left: 94px; 
+		padding-top: 112px;
+	} 
+	.head-main2 { -->
+		text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.9); 
+		letter-spacing: 4px; 
+		word-spacing: 4px; 
+		font-size: 64px; 
+		padding-left: 154px; 
+		padding-top: 16px; 
+	} 
+	.head-main3 { -->
+		text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.9); 
+		letter-spacing: 4px; 
+		word-spacing: 4px; 
+		font-size: 64px; 
+		padding-left: 274px; 
+		padding-top: 20px; 
+	} 
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1440px) {
+	#home {
+		background: url(./img/mybike.png) no-repeat; 
+		background-size: 100%; 
+		display: 100%; 
+		height: auto; 
+		width: auto; 
+		<!-- padding-top: 80px; -->
+		padding-bottom: 0px; 
+		background-color: #000; 
+	}
+	#skills { 
+		background: url(./img/blackbg.jpg) no-repeat;  
+		background-size: 100%; 
+		padding-bottom: 120px;
+		background-color: #000; 
+	} 	
+	.head-main {
+		text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.9);
+		color: #fffffa;
+		letter-spacing: 4px;
+		word-spacing: 3px;
+		font-size: 68px;
+		text-align: left;
+		font-family: "Permanent Marker";
+		line-height: 1;
+		font-weight: 900;
+		padding-left: 260px;
+		padding-top: 190px;
+	} 
+	.head-main2 {
+		text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.9);
+		color: #fffffa;
+		letter-spacing: 4px;
+		word-spacing: 3px;
+		font-size: 68px;
+		text-align: left;
+		font-family: "Permanent Marker";
+		line-height: 1;
+		font-weight: 900;
+		padding-left: 460px;
+		padding-top: 40px;
+	} 
+	.head-main3 {
+		text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.9);
+		color: #fffffa;
+		letter-spacing: 4px;
+		word-spacing: 3px;
+		font-size: 68px;
+		text-align: left;
+		font-family: "Rokkitt";
+		line-height: 1;
+		font-weight: 900;
+		padding-left: 660px;
+		padding-top: 40px;
+	} 
+} 
+</style>
+
+
 <div class="wrap">  
 	<div class="menu-container">
-		<ul class="menu">
-			<a href="#contact"><li>Contact</li></a>
-			<a href="#experience"><li>Experience</li></a>
-			<a href="#portfolio"><li>Portfolio</li></a>
-			<a href="#skills"><li>Skills</li></a>
-			<a href="#home"><li>Home</li></a>
-		</ul>
+		<div class="menuleft">
+			<li><a href="#contact">Phillip Beaver  |  <i>Software Developer</i></a></li>
+			<div class="menuright">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#experience">Experience</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</div>
+		</div>
 	</div>
 </div>
+
+
 <!--END NAV -->
 
 <!-- SKILLS -->
 
 <div id="skills" class="instaFade">
 	<div class="slowFade quote1">'Code this fantastic doesn't come from any old workstation...'</div>
-
-	<div class="container"> 
-		<div id="icons">
-			<div class="hcjicon"></div>
-			<div class="icontext1">
-				<span id="exptexthcj" class="instaFade">HTML, CSS and JavaScript</span>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<img src="./img/html_css.png" alt="">
+			</div>
+			<div class="col-md-4">
+				<img src="./img/logoblkbg.png" alt="">
+			</div>
+			<div class="col-md-4">
+				<img src="./img/sql_logo.png" alt="">
 			</div>
 		</div>
-		<div id="icons"> 
-			<div class="sqlicon"></div>
-			<div class="icontext2">
-				<span id="exptextsql" class="instaFade">MSSQL, mySQL and sqlite</span>
+		<div class="row">
+			<div class="col-md-4">
+				<img src="./img/python_logo.png" alt="">
+			</div>
+			<div class="col-md-4">
+				<img src="./img/alienware3.jpg" alt="">
+			</div>
+			<div class="col-md-4">
+				<img src="./img/git_logo.png" alt="">
 			</div>
 		</div>
-		<div id="icons">
-			<div class="pythonicon"></div>
-			<div class="icontext3">
-				<span id="exptextpyt" class="instaFade">Python, Django, Pygame</span>
+		<div class="row">
+			<div class="col-md-4">
+				<img src="./img/msnet_logo.png" alt="">
 			</div>
-		</div>
-	</div>
-	<div class="container"> 
-		<div id="icons">
-			<div class="giticon"></div>
-			<div class="icontext4">
-				<span id="exptextgit" class="instaFade">Version Control / Collaboration</span>
+			<div class="col-md-4">
+				<img src="./img/logoblkbg.png" alt="">
 			</div>
-		</div>
-		<div id="icons">
-			<div class="msnicon"></div>
-			<div class="icontext5">
-				<span id="exptextmsn" class="instaFade">C , C++ , C# , Visual Studio</span>
-			</div>
-		</div>
-		<div id="icons">
-			<div class="agileicon"></div>
-			<div class="icontext6">
-				<span id="exptextagile" class="instaFade">Scrum / Process Improvement</span>
+			<div class="col-md-4">
+				<img src="./img/agile_logo.png" alt="">
 			</div>
 		</div>
 	</div>
 </div>
+
 <!-- END SKILLS -->
 
 <!-- PORTFOLIO -->
 
 <div id="portfolio" class="instaFade">
-	<div class="slowFade quote2">Current Projects</div>
+	<div class="slowFade quote2">Projects</div>
 	<div class="container">
 		<div class="flex-container">
 				
 			<!-- PHOTO-CONTAINER 1 -->
 			<div class="photo-container">
 				<div class="photo">
-					<img src="./img/thumbs/shoppingList_thumb.png" alt="">
+					<a href="https://github.com/Ketu68/ShoppingList">
+					<img src="./img/thumbs/shoppingList_thumb.png">
 					<div class="photo-overlay">
-						<h3 class="white-head">Shopping List app in MVC with SQL</h3>
-					</div>
-				</div>
+						<h3 class="white-head">Shopping List app in MVC with Excel Import</h3>
+					</div></a>
+				</div>  
 			</div>
 			<!-- END PHOTO-CONTAINER 1 -->
 					
 			<!-- PHOTO-CONTAINER 2 -->
 			<div class="photo-container">
 				<div class="photo">
+					<a href="https://github.com/Ketu68/Library">
 					<img src="./img/thumbs/library_thumb.png" alt="">
 					<div class="photo-overlay">
 						<h3 class="white-head">SQL Relational Database</h3>
-					</div>
+					</div></a>
 				</div>
 			</div>
 			<!-- END PHOTO-CONTAINER 2 -->
@@ -132,10 +451,12 @@
 			<!-- PHOTO-CONTAINER 3 -->
 			<div class="photo-container">
 				<div class="photo">
+					<!-- <a href="https://github.com/Ketu68/Pizza-Drill/Pizza.html"> -->
+					<a href="./Pizza/Pizza.html">
 					<img src="./img/thumbs/pizza_app_thumb.png" alt="">
 					<div class="photo-overlay">
-						<h3 class="white-head">Pizza Online Order Form</h3>
-					</div>
+						<h3 class="white-head">Pizza Online Order Form (using HTML / CSS / JavaScript)</h3>
+					</div></a>
 				</div>
 			</div>
 			<!-- END PHOTO-CONTAINER 3 -->
@@ -143,10 +464,11 @@
 			<!-- PHOTO-CONTAINER 4 -->
 			<div class="photo-container">
 				<div class="photo">
+					<a href="https://github.com/Ketu68/InsuranceApp">
 					<img src="./img/thumbs/insurance_thumb.png" alt="">
 					<div class="photo-overlay">
-						<h3 class="white-head">Online Insurance App</h3>
-					</div>
+						<h3 class="white-head">Online Insurance App in ASP.NET MVC</h3>
+					</div></a>
 				</div>
 			</div>
 			<!-- END PHOTO-CONTAINER 4 -->
@@ -154,10 +476,11 @@
 			<!-- PHOTO-CONTAINER 5 -->
 			<div class="photo-container">
 				<div class="photo">
+					<a href="https://github.com/Ketu68/ContosoUniversity">
 					<img src="./img/thumbs/contoso_thumb.png" alt="">
 					<div class="photo-overlay">
-						<h3 class="white-head">Contoso Univerity</h3>
-					</div>
+						<h3 class="white-head">Contoso Univerity MS Demo App in ASP.NET MVC</h3>
+					</div></a>
 				</div>
 			</div>
 			<!-- END PHOTO-CONTAINER 5 -->
@@ -165,10 +488,11 @@
 			<!-- PHOTO-CONTAINER 6 -->
 			<div class="photo-container">
 				<div class="photo">
-					<img src="./img/thumbs/gsdefender.png" alt="">
-					<div class="photo-overlay">
-						<h3 class="white-head">Galaxian Space Defender !!!</h3>
-					</div>
+					<a href="https://github.com/Ketu68/Galaxian-Space-Defender">
+					<img src="./img/thumbs/gsdefender.png">
+					<div class="photo-overlay"> 
+						<h3 class="white-head">Galaxian Space Defender !!! (using C# and UNITY)</h3> 
+					</div></a>
 				</div>
 			</div>
 			<!-- END PHOTO-CONTAINER 6 -->
@@ -178,75 +502,97 @@
 <!-- END PORTFOLIO -->
 
 <!-- EXPERIENCE -->
-<!------------- Just displays a picture and icons with hoversound --------------->
 	
 <div id="experience" class="quickFade delayFive"> 
-	<div id="icons"> 
-		<div class="navyicon">
-			<a href="" target="" <img src="./img/navy_logo.png" 
-			width="241" 
-			height="241" 
-			border="0" 
-			alt="image"></a>
-		</div>
-	</div> 
-	
-	<div id="icons"> 
-		<div class="cloudicon">
-			<a href="" target="" <img src="./img/cloud.png" 
-			width="443" 
-			height="331" 
-			border="0" 
-			alt="image"></a>
-		</div>
-	</div> 
-	<div id="icons"> 
-		<div class="techicon">
-			<a href="" target="" <img src="./img/tech_logo.png" 
-			width="294" 
-			height="183" 
-			border="0" 
-			alt="image"></a>
-		</div>	
-	</div> 
-</div> 
-
-<div id="contact" class="quickFade"> 
-	<div class="instaFade">
-		<div class="head-name">Phillip Beaver</div>
-		<div class="head-title">Software Developer</div>
-
-		<div id="conticons">
-			<div class="phoneicon"></div>
-			<div class="icontext7">
-				<span id="contextphone" class="instaFade">(903) 431-1530</span>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<img src="./img/navy_logo.png" alt="">
+			</div>
+			<div class="col-md-4">
+				<img src="./img/cloud.png" alt="">
+			</div>
+			<div class="col-md-4">
+				<img src="./img/tech_logo.png" alt="">
 			</div>
 		</div>
-		<div id="conticons">
-			<a href="mailto:pcbeaver68@gmail.com"><div class="emailicon"></div></a>
-			<div class="icontext8">
-				<a href="mailto:pcbeaver68@gmail.com"> <div id="contextemail" class="instaFade">pcbeaver68@gmail.com</div></a>
-
+		<div class="row">
+			<div class="col-md-4">
+				<img src="./img/experiencebuffer.png" alt="">
+			</div>
+			<div class="col-md-4">
+				<img src="./img/experiencebuffer.png" alt="">
+			</div>
+			<div class="col-md-4">
+				<img src="./img/experiencebuffer.png" alt="">
 			</div>
 		</div>
-		<div id="conticons">
-			<a href="./onlineresume/index.html"><div class="resumeicon"></div></a>
-			<div class="icontext9">
-				<a href="./onlineresume/index.html"> <div id="contextresume" class="instaFade">Click for online resume</div></a>
+		<div class="row">
+			<div class="col-md-4">
+				<img src="./img/navy_text.png" alt="">
 			</div>
-		</div>
-
-		<div id="headshot" class="quickFade">
-			<img src="./img/headshot.jpg" alt="Phillip Beaver" />
-		</div>
-
-		<div id="contactlink">
-			<div class="contact-name">
-				<a href="https://linkedin.com/in/phillip-beaver-81267552/">Connect with me on linkedin</a>
+			<div class="col-md-4">
+				<img src="./img/cloud_text.png" alt="">
+			</div>
+			<div class="col-md-4">
+				<img src="./img/tech_text.png" alt="">
 			</div>
 		</div>
 	</div>
 </div>
+
+<div id="contact" class="quickFade"> 
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<img src="./img/contactbuffer.png" alt="">
+			</div>
+			<div class="col-md-4">
+				<img src="./img/contactbuffer.png" alt="">
+			</div>
+			<div class="col-md-4">
+				<img src="./img/contactbuffer.png" alt="">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<div id="conticons">
+					<div class="icontext7">					
+					<div class="phoneicon"></div>
+						<span id="contextphone" class="instaFade">(903) 258-8428</span>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div id="conticons">
+					<div class="icontext8">
+					<div class="emailicon"></div>
+					<a href="mailto:pcbeaver68@gmail.com"> <div id="contextemail" class="instaFade">pcbeaver68@gmail.com</div></a> 
+					</div>
+				</div> 
+			</div>
+			<div class="col-md-4">
+				<div id="conticons">
+					<div class="icontext9">
+					<div class="resumeicon"></div>
+					<a href="./onlineresume/index.html"> <div id="contextresume" class="instaFade">Click for online resume</div></a> 
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="contactlink">
+			<span>CONTACT ME</span>
+
+			<div class="contact-name">
+			<a href="https://linkedin.com/in/phillip-beaver-81267552/">Connect with me on linkedin</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 </body>
 </html>

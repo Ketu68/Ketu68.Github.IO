@@ -13,6 +13,7 @@ html {
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -90,57 +91,103 @@ section {
   margin-right: -15px;
   margin-left: -15px;
 }
+
 /*=======================================
   MENU SECTION ANIMATION
   =======================================*/
 
-.menu {
-	color: #fff;
+.wrap { 
+	height: auto;
+	width: 100%; 
+	position: absolute;
+	overflow: hidden;
+	top: 0; 
+	left: 0; 
+	text-align: center; 
+} 
+.menu-container { 
+	height: auto;
+	width: 100%; 
+	z-index: 100;
+	position: fixed;
+	top: 0; 
+	padding: 0px 0px;
+} 
+.menuleft {
 	font: bold 24px Rokkitt;
-	text-align: center;
-	display: inline;
-	margin: 0% auto;
-	padding: 0;
-	list-style: none;
-	text-decoration: none;
+	width: 100%;
+	float: left;
+	margin: 0 0 1em 0;
+	padding: 8px 8px;
+	border-bottom: 4px solid #678;
+	background-color: rgba(128,128,128,0.5);
 }
-
-.menu li {
-	color: #fff;
+.menuright {
+	font: bold 24px Rokkitt;
+	/* width: 100%; */
+	/* margin: 0 0 1em 0; */
+	/* padding: 8px 8px; */
+	/* border-bottom: 4px solid #678; */
+	/* background-color: rgba(128,128,128,0.5); */
+	float: right;
+}
+.menuleft ul {
+	list-style: none;
+	width: 100%;
+	margin: 0;
+	padding: 0; 
+}
+.menuright ul { 
+	list-style: none; 
+	width: 100%; 
+	margin: 0; 
+	padding: 0;  
+}
+.menuright li {
 	display: inline;
-	text-shadow: 3px 2px black;
+	text-shadow: 2px 2px black;
 	list-style-type: none;
     margin: 0;
-    padding: 0;
-    overflow: hidden;
-    float: right;
 	position: relative;
-	padding: 23px 1%;
 	cursor: pointer;
 	transition-property: background;
 	transition-duration: .4s;
 	transition-delay: 4s;
 	transition-timing-function: ease-in-out;
+	float: right;
 }
-
-.menu li:hover {
-	color: #ffff00;
+.menuleft li {
+	display: inline;
+	text-shadow: 1px 1px black;
+	list-style-type: none;
+    margin: 0;
+	position: relative;
+	cursor: pointer;
+	transition-property: background;
+	transition-duration: .4s;
+	transition-delay: 4s;
+	transition-timing-function: ease-in-out;
+	float: left;
 }
-
-.menu-container {
-	max-height: 340px;
-	margin: 0% auto;
-	content: " ";
-	width: 100%;
-	position: fixed;
-	z-index: 100;          
-}
-
-
-.navbar {
-	height: 105px;
-	max-height: 340px;
+.menuright li a {
 	display: block;
+	padding: 12px 15px;
+	text-decoration: none;
+	font-weight: bold;
+	color: #fafafa;
+}
+.menuleft li a {
+	display: block;
+	padding: 12px 15px;
+	text-decoration: none;
+	font-weight: bold;
+	color: #fafafa;
+}
+.menuright li a:hover {
+	color: #ffff00; 
+}
+.menuleft li a:hover {
+	color: #ffff00; 
 }
 
 .clearfix:after,
@@ -150,16 +197,6 @@ section {
 	display: table;
 	content: " ";
 }
-
-.wrap { 
-	height: 100%;
-	width: 100%; 
-	position: absolute;
-	overflow: hidden;
-	top: 0; 
-	left: 0; 
-	text-align: right; 
-} 
 
 .flex-container {
     display: -webkit-flex;
@@ -186,40 +223,37 @@ section {
   margin-left: auto;
   position: relative;
   width: 50%;
+  /* float: right; */
 }
 
 /*=======================================
   SECTION STYLES
   =======================================*/
 #home {
-	background: url(../img/mybike4.jpg) no-repeat; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	display: auto;
-	height: 1991;
-	/* width: 3253; */
-	width: 100%;
-	height: 100%;
-	padding-bottom: 474px;
+	background: url(../img/mybike.jpg) no-repeat; 
+	-webkit-background-size: auto; 
+	-moz-background-size: auto; 
+	-o-background-size: auto; 
+	background-size: auto; 
+	display: auto; 
+	height: auto; 
+	width: auto; 
+	padding-bottom: 4px;
 	color: #000;
 	background-color: #000;
 } 
 #skills {
-	background: url(../img/alienware3.jpg) no-repeat; 
-	z-index: 1;
+	background: url(../img/blackbg.jpg) no-repeat; 
 	background-color: #000;
 	-webkit-background-size: 100%;
-	-moz-background-size: 100%;
-	-o-background-size: 100%;
-	background-size: 114%;
+	 -moz-background-size: 100%; 
+	 -o-background-size: 100%; 
+	background-size: 100%;
 	display: auto;
-	height: 902;
-	width: 1651;
+	height: auto;
+	width: auto;
 	padding-top: 0px; 
-	/* padding-bottom: 777px;    */
-	padding-bottom: 100px;
+	padding-bottom: 138px;
 }
 #portfolio {
 	background-color: #585858;
@@ -227,12 +261,11 @@ section {
 	height: auto;
 	width: auto;
 	padding-top: 0px; 
-	padding-bottom: 324px;    
+	padding-bottom: 312px;    
 }
 #experience {
 	background: url(../img/experience.jpg) no-repeat; 
-	z-index: 1;
-	background-color: #fff;
+	background-color: #3f47cc;
 	-webkit-background-size: 100%;
 	-moz-background-size: 100%;
 	-o-background-size: 100%;
@@ -240,19 +273,21 @@ section {
 	display: auto;
 	height: auto;
 	width: auto;
-	padding-top: 0px; 
-	padding-bottom: 200px;      
+	padding-top: 80px; 
+	padding-bottom: 238px;    
 }
 #contact {
 	background: url(../img/globe.png) no-repeat; 
-	z-index: 1;
-	background-color: #fff;
+	background-color: #585858;
 	-webkit-background-size: 100%;
 	-moz-background-size: 100%;
 	-o-background-size: 100%;
-	background-size: 100%;
+	background-size: auto;
+	display: auto;
+	height: auto;
+	width: auto;
 	padding-top: 0px; 
-	padding-bottom: 20px;
+	padding-bottom: 616px;
 }
 
 .head-name {
@@ -267,7 +302,7 @@ section {
 	line-height: 1;
     font-weight: 900;
     padding-left: 50px;
-	padding-top: 20px;
+	padding-top: 8px;
 }
 
 .head-title {
@@ -288,46 +323,46 @@ section {
 .head-main {
 	text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.9);
 	color: #fffffa;
-	letter-spacing: 2pt;
-	word-spacing: 10pt;
-	font-size: 6em;
+	letter-spacing: 6px;
+	word-spacing: 6px;
+	font-size: 72px;
 	text-align: left;
 	font-family: "Permanent Marker";
 	line-height: 1;
     font-weight: 900;
     padding-left: 260px;
-	padding-top: 40px;
+	padding-top: 190px;
 }
 
 .head-main2 {
 	text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.9);
 	color: #fffffa;
-	letter-spacing: 2pt;
-	word-spacing: 10pt;
-	font-size: 6em;
+	letter-spacing: 6px;
+	word-spacing: 6px;
+	font-size: 72px;
 	text-align: left;
 	font-family: "Permanent Marker";
 	line-height: 1;
     font-weight: 900;
     padding-left: 460px;
-	padding-top: 20px;
+	padding-top: 40px;
 }
 .head-main3 {
 	text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.9);
 	color: #fffffa;
-	letter-spacing: 1pt;
-	word-spacing: 10pt;
-	font-size: 6em;
+	letter-spacing: 6px;
+	word-spacing: 6px;
+	font-size: 72px;
 	text-align: left;
 	font-family: "Rokkitt";
 	line-height: 1;
     font-weight: 900;
     padding-left: 660px;
-	padding-top: 20px;
+	padding-top: 40px;
 }
 
 .quote1 {
-	text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.9);
+	text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.1);
 	color: #ffff00;
 	letter-spacing: 1pt;
 	word-spacing: 2pt;
@@ -338,7 +373,8 @@ section {
 	line-height: 1;
     font-weight: 900;
     padding-left: 0px;
-	padding-top: 130px;
+	padding-top: 100px;
+	padding-bottom: 80px;
 }
 .quote2 {
 	text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.9);
@@ -351,260 +387,47 @@ section {
 	font-style: italic;
 	line-height: 1;
     font-weight: 900;
-    padding-left: 50px;
+    padding-left: 0px;
 	padding-top: 120px;
 	padding-bottom: 80px;
 }
 
-.icontext1 {  
-  font-size: 20px; 
-  position: absolute; 
-  left: -118px;  
-  top: 140px; 
-  text-align: left;
-}
-.icontext2 {  
-  font-size: 20px; 
-  position: absolute; 
-  left: -126px;  
-  top: 276px;  
-  text-align: left; 
-}
-.icontext3 {  
-  font-size: 20px; 
-  position: absolute; 
-  left: -126px;
-  top: 430px;
-  text-align: left;
-}
-.icontext4 {  
-  font-size: 20px; 
-  position: absolute; 
-  left: 734px; 
-  top: -200px; 
-  text-align: right; 
-}
-.icontext5 { 
-  font-size: 20px; 
-  position: absolute; 
-  left: 814px; 
-  top: -60px; 
-  text-align: right; 
-}
-.icontext6 {  
-  font-size: 20px; 
-  position: absolute; 
-  left: 814px; 
-  top: 98px; 
-  text-align: right; 
-} 
 .icontext7 {  
   font-size: 20px; 
-  position: absolute; 
-  left: 367px; 
-  top: 3792px; 
-  text-align: left; 
+  position: relative; 
+  left: 0px; 
+  top: 0px; 
+  text-align: center; 
 }
 .icontext8 {  
   font-size: 20px; 
-  position: absolute; 
-  left: 840px; 
-  top: 3792px; 
-  text-align: left; 
+  position: relative; 
+  left: 0px; 
+  top: 0px; 
+  text-align: center; 
 } 
 .icontext9 {  
   font-size: 20px; 
-  position: absolute; 
-  left: 1338px; 
-  top: 3792px; 
-  text-align: left; 
-}
-
-.hcjicon {
-	position: relative;
-	left: -270px;
-	top: 100px;
-	background-image: url(../img/html_css.png);
-	z-index: 2;
-	background-repeat: no-repeat;
-	width: 121px;
-	height: 110px;
-}
-#exptexthcj {
-	position: relative;
-    display: none;
-    font-size: 20px;
-	color: blue;
-}
-#icons:hover #exptexthcj {
-	display: block;
-}
-.hcjicon:hover {
-	opacity: .30;
-}
-.giticon {
-	position: relative;
-	left: 1092px;
-	top: -228px;
-	background-image: url(../img/git_logo.png);
-	z-index: 2;
-	background-repeat: no-repeat;
-	width: 121px;
-	height: 110px;
-}
-#exptextgit {
-	position: relative;
-    display: none;
-    font-size: 20px;
-	color: blue;
-}
-#icons:hover #exptextgit {
-	display: inline;
-}
-.giticon:hover {
-	opacity: .50; 
-} 
-
-.sqlicon {
-	position: relative;
-	left: -267px;
-	top: 130px;
-	background-image: url(../img/sql_logo.png);
-	z-index: 2;
-	background-repeat: no-repeat;
-	width: 121px;
-	height: 110px;
-}
-#exptextsql {
-	position: relative;
-    display: none;
-    font-size: 21px;
-	color: green;
-}
-#icons:hover #exptextsql {
-	display: block;
-}
-
-.sqlicon:hover {
-	opacity: .30;
-}
-
-.msnicon {
-	position: relative;
-	left: 1065px;
-	top: -210px;
-	background-image: url(../img/msn.png);
-	z-index: 2;
-	background-repeat: no-repeat;
-	width: 136px;
-	height: 134px;
-}
-#exptextmsn {
-	position: relative;
-    display: none;
-    font-size: 21px;
-	color: green;
-}
-#icons:hover #exptextmsn {
-	display: inline;
-}
-
-.msnicon:hover {
-	opacity: .30;
-}
-
-.pythonicon {
-	position: relative;
-	left: -270px;
-	top: 172px;
-	background-image: url(../img/python_logo.png);
-	z-index: 2;
-	background-repeat: no-repeat;
-	width: 121px;
-	height: 110px;
-}
-#exptextpyt {
-	position: relative;
-    display: none;
-    font-size: 21px;
-	color: yellow;
-}
-#icons:hover #exptextpyt {
-	display: inline;
-}
-.pythonicon:hover {
-	opacity: .30;
-}
-
-.agileicon {
-	position: relative;
-	left: 1060px;
-	top: -177px;
-	background-image: url(../img/agile_logo.png);
-	z-index: 2;
-	background-repeat: no-repeat;
-	width: 121px;
-	height: 110px;
-}
-#exptextagile {
-	position: relative;
-    display: none;
-    font-size: 21px;
-	color: yellow;
-}
-#icons:hover #exptextagile {
-	display: inline;
-}
-
-.agileicon:hover {
-	opacity: .30;
-}
-
-.navyicon {
-	position: relative;
-	left: 198px;
-	top: 230px;
-	background-image: url(../img/navy_logo.png);
-	z-index: 2;
-	background-repeat: no-repeat;
-	width: 243px;
-	height: 241px;
-}
-.cloudicon {
-	position: relative;
-	left: 733px;
-	top: -41px;
-	background-image: url(../img/cloud.png);
-	z-index: 2;
-	background-repeat: no-repeat;
-	width: 410px;
-	height: 304px;
-}
-.techicon {
-	position: relative;
-	left: 1379px;
-	top: -260px;
-	background-image: url(../img/tech_logo.png);
-	z-index: 2;
-	background-repeat: no-repeat;
-	width: 294px;
-	height: 183px;
+  position: relative; 
+  left: 0px; 
+  top: 0px; 
+  text-align: center; 
 }
 .phoneicon {
 	position: relative;
-	left: 318px;
-	top: 102px;
+	left: 0px;
+	top: 0px;
 	background-image: url(../img/phone.png);
 	z-index: 2;
 	background-repeat: no-repeat;
-	width: 299px;
-	height: 229px;
+	width: 300px;
+	height: 230px;
 }
 #contextphone {
 	position: relative;
     display: none;
-	left: 30px;
-	top: 422px;
+	left: -26px;
+	top: 20px;
     font-size: 21px;
 	color: yellow;
 }
@@ -617,19 +440,19 @@ section {
 
 .emailicon {
 	position: relative;
-	left: 806px;
-	top: -118px;
+	left: 0px;
+	top: 0px;
 	background-image: url(../img/email.png);
 	z-index: 2;
 	background-repeat: no-repeat;
-	width: 312px;
-	height: 273px;
+	width: 300px;
+	height: 230px;
 }
 #contextemail {
 	position: relative;
     display: none;
-	left: 8px;
-	top: 420px;
+	left: -26px;
+	top: 20px;
     font-size: 21px;
 	color: yellow;
 }
@@ -639,22 +462,25 @@ section {
 .emailicon:hover {
 	opacity: .30;
 }
+.emailicon:onclick {
+	opacity: .30;
+}
 
 .resumeicon {
 	position: relative;
-	left: 1332px;
-	top: -420px;
+	left: 0px;
+	top: 0px;
 	background-image: url(../img/resume.png);
 	z-index: 2;
 	background-repeat: no-repeat;
-	width: 229px;
-	height: 279px;
+	width: 300px;
+	height: 230px;
 }
 #contextresume {
 	position: relative;
     display: none;
-	left: 8px;
-	top: 418px;
+	left: -45px;
+	top: 20px;
     font-size: 21px;
 	color: yellow;
 }
@@ -688,26 +514,38 @@ section {
 
   
 #contactlink { 
-	position: relative; 
-    font-size: 24px; 
-	left: 743px; 
-	top: -88px; 
-	color: yellow; 
+	position: absolute; 
+	color: white; 
+	text-align: center;
+	font: 42px Rokkitt;
+	font-style: bold;
+	line-height: 1;
+    font-weight: 900;
+	left: 386px;
+	top: 694px;
+	color: white; 
 	text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
 }
 
 .contact-name {
+	position: relative; 
 	text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.9);
 	color: yellow;
 	letter-spacing: 1pt;
 	word-spacing: 1pt;
 	font-size: 2em;
-	text-align: left;
+	text-align: center;
 	font: 24px Rokkitt;
 	font-style: normal;
 	line-height: 1;
     font-weight: 900;
-    padding-left: 50px;
-	padding-top: 20px;
+    padding-left: 0px;
+	padding-top: 38px;
 }
 
+#preloadedImages {
+    width: 1px;
+    height: 1px;
+    display: none;
+    background-image: url(../img/mybike.jpg);
+}
