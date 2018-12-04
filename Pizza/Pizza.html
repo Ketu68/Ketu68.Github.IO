@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="./js/final_drill_basic.js"></script> 
+
+	<head>
+		<style> 
+			html { 
+			background: url(Pizza.jpg) no-repeat center fixed; 
+			background-size: cover;
+			}
+			body { 
+			color: white; 
+			}
+		</style>
+		<title>Pizza Drill Demo</title>
+		
+		<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+		<link rel="stylesheet" href="./CSS/Pizza.css">
+	</head>
+	
+	<body>
+	
+	<!------ HOME ------->
+
+		<div class="container">
+			<div class ="text-center">
+				<span class="head-main">Tony Gunks House of Pizza</span>
+			</div>
+		</div>
+
+	<!------ END HOME ---->
+	
+	<!-------- MENU --------->
+		<div class="flex-container">
+			<div class="menu_sizes">
+				<h3>Size:</h3>
+				<input class="size" type="radio" name="Size" value="Personal Pizza"> Personal Pizza<br>
+				<input class="size" type="radio" name="Size" value="Medium Pizza"> Medium Pizza<br>
+				<input class="size" type="radio" name="Size" value="Large Pizza"> Large Pizza<br>
+				<input class="size" type="radio" name="Size" value="Extra Large Pizza"> Extra Large Pizza<br>
+			</div>
+			<div class="menu_meats">
+				<h3>Meats:</h3>
+				<input class="meats" type="checkbox" name="Meat" value="Pepperoni"> Pepperoni<br>
+				<input class="meats" type="checkbox" name="Meat" value="Sausage"> Sausage <br>
+				<input class="meats" type="checkbox" name="Meat" value="Canadian Bacon"> Canadian Bacon<br> 
+				<input class="meats" type="checkbox" name="Meat" value="Ground Beef"> Ground Beef<br>
+				<input class="meats" type="checkbox" name="Meat" value="Anchovy"> Anchovy<br>
+				<input class="meats" type="checkbox" name="Meat" value="Chicken"> Chicken<br>
+			</div>
+			<div class="menu_veggies">
+				<h3>Veggies:</h3>
+				<input class="veggies" type="checkbox" name="Veggie" value="Tomatoes"> Tomatoes<br>
+				<input class="veggies" type="checkbox" name="Veggie" value="Onions"> Onions <br>
+				<input class="veggies" type="checkbox" name="Veggie" value="Olives"> Olives<br> 
+				<input class="veggies" type="checkbox" name="Veggie" value="Green Peppers"> Green Peppers<br>
+				<input class="veggies" type="checkbox" name="Veggie" value="Mushrooms"> Mushrooms<br>
+				<input class="veggies" type="checkbox" name="Veggie" value="Pineapple"> Pineapple<br>
+				<input class="veggies" type="checkbox" name="Veggie" value="Spinach"> Spinach<br>
+				<input class="veggies" type="checkbox" name="Veggie" value="Jalepeno"> Jalepeno<br>
+			</div>
+			<div class="menu_cheeses">
+				<h3>Cheeses:</h3>
+				<input class="cheeses" type="radio" name="Cheese" value="No cheese"> No Cheese<br>
+				<input class="cheeses" type="radio" name="Cheese" value="Regular Cheese"> Regular Cheese<br>
+				<input class="cheeses" type="radio" name="Cheese" value="Extra Cheese"> Extra Cheese<br>
+			</div>
+			<div class="menu_crusts">
+				<h3>Crusts:</h3>
+				<input class="crusts" type="radio" name="Crust" value="Plain Crust"> Plain Crust<br>
+				<input class="crusts" type="radio" name="Crust" value="Garlic Butter Crust"> Garlic Butter Crust<br>
+				<input class="crusts" type="radio" name="Crust" value="Cheese Stuffed Crust"> Cheese Stuffed Crust<br>
+				<input class="crusts" type="radio" name="Crust" value="Spicy Crust"> Spicy Crust<br>
+				<input class="crusts" type="radio" name="Crust" value="House Special Crust"> House Special Crust<br>
+			</div>
+			<div class="menu_sauces">
+				<h3>Sauces:</h3>
+				<input class="sauces" type="radio" name="Sauce" value="Marinara Sauce"> Marinara Sauce<br>
+				<input class="sauces" type="radio" name="Sauce" value="White Sauce"> White Sauce<br>
+				<input class="sauces" type="radio" name="Sauce" value="BBQ Sauce"> BBQ Sauce<br>
+				<input class="sauces" type="radio" name="Sauce" value="No Sauce"> No Sauce<br>
+			</div>
+		</div>
+	<!-------- END MENU -------->
+
+	<!-------- SHOW TOTAL ------>
+		<div class="total-container"> 
+			<div class="showtotalbtn">
+				<input type="submit" value="Show Total" onclick="getReceipt()">
+			</div>
+			<div id="showText"></div> 
+			<div id="totalPrice"></div>
+		</div>
+
+	
+	<!-------- END SHOW TOTAL --------->
+	
+	<!-------- PLACE ORDER ----->
+
+			<div class="container">
+				<div class ="text-center">
+					<span class="contact-main">DELIVERY ADDRESS</span>
+				</div>
+			</div>
+
+
+		<div class="order">
+			<div class="order-form">
+				<form action="" method="post">
+					<input class="order" type="text" value="" placeholder="First Name">
+					<input class="order" type="text" value="" placeholder="Last Name">
+					<input class="order" type="text" value="" placeholder="Address">
+					<input class="order" type="text" value="" placeholder="Phone number">
+					<div class="submit">
+						<input type="submit" value="Submit Order">
+					</div>
+				</form>
+			</div>
+		</div>
+
+	<!------END PLACE ORDER ----->
+
+	</body>
+</html>

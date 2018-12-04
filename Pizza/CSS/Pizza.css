@@ -1,0 +1,392 @@
+html {
+	font-family: sans-serif;
+	font-size: 62.5%;
+	-webkit-tap-highlight-color: rgba(0);
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+body {
+	font-size: 14px;
+	margin: 0;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 1.42857143;
+	color: #333333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+	line-height: 50px;
+	font-weight: 900;
+	font-size: 30px;
+	text-transform: uppercase;
+	text-align: center;
+	color: rgba(255,255,255,1);
+	text-shadow: 4px 4px 8px rgba(0,0,0,0.6);
+}
+h1::after {
+	display: block;
+	content: "";
+	height: 4px;
+	width: 200px;
+	background: #FFFFFF; 
+	margin: 5px auto 40px;
+	box-shadow: 5px 2px 3px rgba(0,0,0,0.5);
+}
+h2 {
+	line-height: 50px;
+	color: #E91C1C;
+	text-align: center;
+}
+h3 {
+	line-height: 10px;   
+	padding-bottom: 12px;
+	text-align: center;
+}
+h4 {
+	padding-top: 25px;
+	line-height: 40px;
+	padding-bottom: 0px;
+	font-size: 22px;
+	font-weight: 900;
+	text-align: center;
+}
+p {
+	font-height: 300;
+	line-height: 30px;
+	padding-bottom: 15px;
+}
+.text-center {
+	text-align: center;
+}
+.heading-padding {
+	padding-bottom: 40px;
+}
+.navbar {
+	height: 105px;
+	max-height: 340px;
+	display: block;
+}
+.container {
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-top: 20px;
+	padding-bottom: 25px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.container-fluid {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.row {
+	margin-right: -15px;
+	margin-left: -15px;
+}
+.clearfix:after;
+.container:after;
+.navbar:after {
+	clear: both;
+	display: false;
+	content: " ";
+}
+.wrap {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	text-align: center;
+}
+.menu-container {
+	max-height: 340px;
+	margin: 0% auto;
+	content: " ";
+	top: 0;
+	left: 0;  
+	width: 100%;
+	position: fixed;
+	z-index: 100;
+}
+
+/*------------------------------------ 
+	HOME SECTION STYLES
+  ------------------------------------*/
+  
+#home {
+	background: url(../Img/pizza.jpg) no-repeat 100% 100%;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	display: block;
+	height: auto;
+	padding-top: 50px; 
+	padding-bottom: 500px; 
+	color: #000000; 
+}
+.head-main {
+	text-shadow: 2px 4px 5px rgba(0,0,0,0.9);
+	color: #ffffff;
+	letter-spacing: 5pt;
+	word-spacing: 8pt;
+	font-size: 3.5em;
+	text-align: left;
+	font-family: impact, sans-serif;
+	line-height: 2;
+	font-weight: 900;
+	border: 8px groove #ffffff;
+	padding: 10px;
+}
+.contact-main {
+	text-shadow: 1px 2px 3px rgba(0,0,0,0.9);
+	color: #ffffff;
+	letter-spacing: 5pt;
+	word-spacing: 8pt;
+	font-size: 1.5em;
+	text-align: left;
+	font-family: impact, sans-serif;
+	line-height: 1;
+	font-weight: 900;
+	border: 3px solid #ffffff;
+	border-radius: 0%;
+	padding: 2px 4px;
+}
+
+/*------------------------------------
+  CONTACT STYLES
+-------------------------------------- */
+
+.flex-container {
+	width: 88%;
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 30px;
+	border-radius: 8px;
+	margin: 0px auto;
+	background-color: rgba(100,65,0,.3);
+	box-shadow: 4px 4px 12px 0 rgba(0,0,0,0.5);
+}
+.total-container {
+	width: 68%;
+	height: 60px;
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 10px;
+	border-radius: 8px;
+	margin: 0px auto;
+	color: #ffffff;
+	background-color: rgba(100,65,0,.3);
+	box-shadow: 4px 4px 12px 0 rgba(0,0,0,0.5);
+}
+.order {
+	width: 50%;
+	padding: 0px;
+	border-radius: 12px;
+	margin: 0px auto;
+}
+.order p {
+	color: #13161B;
+	width: 50%;
+	margin: 0px auto;
+}
+.order form {
+	font-size: 15px;
+	outline: none;
+	font-weight: 600;
+	color: #8D8E8F;
+	padding: 12px 12px;
+	width: 70%;
+	border: 2px solid #808080;
+	margin: 2px auto;
+	border-radius: 7px; 
+	background: rgb(227,222,222); 
+	box-shadow: 2px 3px 3px 0px rgba(0,0,0,0.3);
+	font-family: 'Raleway', sans-serif; 
+}
+.order input[type="text"] {
+	font-size: 15px;
+	outline: none;
+	font-weight: 600;
+	color: #8D8E8F;
+	padding: 2% 1% 2% 7%;
+	width: 91%;
+	border-top: 1px solid #090B0D;
+	border-right: 2px solid #424549;
+	border-bottom: 2px solid #424549;
+	border-left: 1px solid #090B0D;
+	margin: 10px auto;
+	border-radius: 7px;
+	background: #13161B;
+	box-shadow: inset 0px 3px 0px 0px rgba(5,5,5,0.1);
+	font-family: 'Raleway', sans-serif;
+}
+.order input[type="text"]:hover {
+	box-shadow: 0 0 18px rgba(100,65,0,.8);
+}
+.form-spacer {
+	padding: 30px 39px;
+}
+.cart {
+	margin: 1px 1px 0 0;
+	padding-left: 0px;
+	font-size: 14px;
+	line-height: 5px;
+	color: #ffffff;
+	cursor: pointer;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	position: relative;
+	display: inline;
+	float: right;
+}
+.terms {
+	margin: 30px 1px 0 0;
+	padding-left: 52px;
+	font-size: 14px;
+	line-height: 5px;
+	color: #000000;
+	cursor: pointer;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	position: relative;
+	display: inline;
+	float: right;
+}
+.terms:hover {
+	color:orange;
+	text-decoration: underline;
+}
+.showtotalbtn input[type="submit"] {   /* TOTAL BUTTON */
+	color: rgb(225,225,225);
+	cursor: pointer;
+	border: none;
+	font-weight: 900;
+	outline: none;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	margin: 0px 0px; 
+	padding: 10px 10px;
+	width: 100px;
+	font-size: 12px;
+	transition: border-color 0.3s color 0.3s background-color 0.3s;
+	border-radius: 7px;
+	background-color: #797a7b;
+	box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.3);
+	float: left;
+}
+.showtotalbtn input[type="submit"]:hover {
+	color: #000000;
+	background-color: #8D8E8F;
+	box-shadow: inset 1px 2px 15px 0 rgba(0,0,0,0.5);
+}
+.submit input[type="submit"] {
+	color: rgb(225,225,225);
+	cursor: pointer;
+	border: none;
+	font-weight: 900;
+	outline: none;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	margin: 0px 36%; 
+	padding: 10px 10px;
+	width: 25%;
+	font-size: 12px;
+	transition: border-color 0.3s color 0.3s background-color 0.3s;
+	border-radius: 7px;
+	background-color: #797a7b;
+	box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.3);
+}
+.submit input[type="submit"]:hover {
+	color: #000000;
+	background-color: #8D8E8F;
+	box-shadow: inset 1px 2px 15px 0 rgba(0,0,0,0.5);
+}
+
+/*------------------------------------
+  MENU STYLES
+-------------------------------------- */
+
+.menu_sizes {
+	padding-left: 14px;  
+	text-align: left;
+	width: 240px;
+	height: 240px;
+	margin: 5px;
+	background-color: #C8806E;
+	color: #000000;
+	border: 6px solid white;
+	border-radius: 16%;
+	float: left;	
+}
+
+.menu_meats {
+	padding-left: 14px;
+	width: 240px;
+	height: 240px;
+	margin: 5px;
+	background-color: #C8806E;
+	color: #000000;
+	border: 6px solid white;
+	border-radius: 16%;
+	float: left;  
+}
+
+.menu_veggies {
+	padding-left: 14px;
+	width: 240px;
+	height: 240px;
+	margin: 5px;
+	background-color: #C8806E;
+	color: #000000;
+	border: 6px solid white;
+	border-radius: 16%;
+	float: left;  
+}
+
+.menu_cheeses {
+	padding-left: 14px;
+	width: 240px;
+	height: 240px;
+	margin: 5px;
+	background-color: #C8806E;
+	color: #000000;
+	border: 6px solid white;
+	border-radius: 16%;
+	float: left;  
+}
+
+.menu_crusts {
+	padding-left: 14px;
+	width: 240px;
+	height: 240px;
+	margin: 5px;
+	background-color: #C8806E;
+	color: #000000;
+	border: 6px solid white;
+	border-radius: 16%;
+	float: left;  
+}
+
+.menu_sauces {
+	padding-left: 14px;
+	width: 240px;
+	height: 240px;
+	margin: 5px;
+	background-color: #C8806E;
+	color: #000000;
+	border: 6px solid white;
+	border-radius: 16%;
+	float: left;  
+}
+
