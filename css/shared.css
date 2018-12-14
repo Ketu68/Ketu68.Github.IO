@@ -323,7 +323,7 @@ section {
 #head-title {
 	position: absolute;
 	opacity: 0.9;
-	background-image: url(..//header2.png); 
+	background-image: url('../Header2.png'); 
 	z-index: 2; 
 	left: 240px;
 	top: 0px;
